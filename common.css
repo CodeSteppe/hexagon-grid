@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: url('./bg.jpg') no-repeat;
+  background-size:cover;
+  background-position:center;
+  backdrop-filter: blur(10px);
+}
