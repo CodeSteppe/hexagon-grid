@@ -3,7 +3,7 @@
   /* --height: calc(1.15 * var(--width)); */
   --border-width: calc(0.07 * var(--width));
   --border-color: #3e3e3e;
-  --content-color: #ffcc00;
+  --yellow: #ffcc00;
   --clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 
   /* --gap: calc(0.02 * var(--width)); */
@@ -38,8 +38,16 @@ body {
   right: var(--border-width);
   bottom: var(--border-width);
   left: var(--border-width);
-  background-color: var(--content-color);
   clip-path: var(--clip-path);
+  /* background-color: var(--yellow); */
+  background: radial-gradient(
+    circle at 80% 35%,
+    #fff,
+    #fff 10%,
+    var(--yellow) 40%,
+    var(--yellow) 70%,
+    #000 100%
+  );
 }
 
 /* part2 */
