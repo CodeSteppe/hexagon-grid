@@ -16,17 +16,31 @@ body {
   place-items: center; */
 }
 
-h1 {
+.title {
   position: fixed;
   left: 2vw;
   top: 0;
   bottom: 0;
+  height: fit-content;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 10vw;
   font-family: "Concert One", cursive;
+  /* color: var(--content-color); */
+
+  filter: drop-shadow(-20px 20px 30px rgba(0, 0, 0, 0.5));
+}
+
+.title h1 {
+  text-transform: uppercase;
+  font-size: 12vw;
+  color: transparent;
+  background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 0, 115));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.title h2 {
+  font-size: 4vw;
+  background-color: rgb(255, 217, 0);
+  text-align: center;
 }
 
 .hexagon {
@@ -68,15 +82,17 @@ h1 {
 .grid {
   overflow: hidden;
   position: fixed;
-  top: 10vh;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   right: 5vw;
-  width: 80vh;
-  height: 80vh;
+  width: 44vw;
+  height: 44vw;
   border-radius: 50%;
-  border: 3vh solid rgba(255, 255, 255, 0.5);
+  border: 3vh solid rgba(255, 255, 255, 0.6);
   background: var(--content-color);
   background-clip: content-box;
-  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
 }
 
 .row {
@@ -98,8 +114,11 @@ h1 {
 
 .bee {
   position: fixed;
-  width: 30vw;
-  right: 15vw;
-  top: 25vh;
+  width: 25vw;
+  right: 10vw;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
   filter: drop-shadow(0px 30px 30px rgba(0, 0, 0, 0.8));
 }
