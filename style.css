@@ -1,6 +1,6 @@
 :root {
   /* --width: 200px; */
-  /* --height: calc(1.15 * var(--width)); */
+  /* --height: calc(1.16 * var(--width)); */
   --border-width: calc(0.07 * var(--width));
   --border-color: #3e3e3e;
   --yellow: #ffcc00;
