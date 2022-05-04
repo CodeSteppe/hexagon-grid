@@ -1,7 +1,7 @@
 const sideLength = 100;
 const hexagonWidth = Math.sqrt(3) * sideLength;
 const hexagonHeight = 2 * sideLength;
-const gap = 0.02 * hexagonWidth;
+const gap = 0.05 * hexagonWidth;
 const colWidth = hexagonWidth + gap;
 const rowHeight = 1.5 * sideLength + Math.sqrt(0.75) * gap;
 
