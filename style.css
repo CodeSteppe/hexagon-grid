@@ -1,3 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: url('./bg.jpg') no-repeat;
+  background-size:cover;
+  background-position:center;
+  backdrop-filter: blur(10px);
+}
+
 :root {
   /* --width: 200px; */
   /* --height: calc(1.16 * var(--width)); */
@@ -7,11 +24,6 @@
   --clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 
   /* --gap: calc(0.02 * var(--width)); */
-}
-
-body {
-  display: grid;
-  place-items: center;
 }
 
 .hexagon {
